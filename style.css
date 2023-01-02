@@ -1,0 +1,70 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+}
+body .container {
+  background-color: lightgrey;
+  border-radius: 5px 5px 0 0;
+  padding: 20px;
+  font-weight: 800;
+  max-width: 500pt;
+}
+body .container input,
+body .container select,
+body .container textarea {
+  width: 100%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+body .container button {
+  background-color: rgb(147, 187, 216);
+  color: white;
+  border: none;
+  font-size: larger;
+  border: 2px solid;
+  display: inline-block;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+  margin-left: 200pt;
+}
+body #one {
+  background-color: lightgreen;
+  color: blue;
+  font-size: 18px;
+  height: 50pt;
+  padding: 20px;
+  font-weight: 800;
+  max-width: 500pt;
+}
+body #two {
+  background-color: pink;
+  color: rgb(255, 0, 0);
+  font-size: 18px;
+  height: 50pt;
+  padding: 20px;
+  font-weight: 800;
+  max-width: 500pt;
+}
+body .topnav {
+  padding: 20px;
+  margin: 20px;
+  font-weight: 800;
+}
+body .topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+body .topnav .loginContainer {
+  float: right;
+}
+
+/*# sourceMappingURL=style.css.map */

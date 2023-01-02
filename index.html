@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Work SCSS</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a class="activ" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+
+      <div class="loginContainer">
+        <input type="text" id="username" placeholder="Username" />
+        <input type="text" id="password" placeholder="password" />
+        <button onclick="login()">Login</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Contact Details</h2>
+      <form>
+        <lable for="fname">First Name</lable>
+        <input type="text" id="fname" placeholder="Your name..." />
+
+        <lable for="lname">Last Name</lable>
+        <input type="text" id="lname" placeholder="Your last name..." />
+
+        <lable for="country">Country</lable>
+        <select id="country" name="country">
+          <option value="israel">Israel</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="italy">Italy</option>
+        </select>
+
+        <lable for="birthday">Your Birthday</lable>
+        <input type="date" id="birthday" placeholder="Your birthday" />
+
+        <lable for="email">email</lable>
+        <input type="email" id="email" placeholder="Insert your mail" />
+
+        <lable for="phone">Phone Number</lable>
+        <input type="phone" id="phone" placeholder="Your phone number..." />
+
+        <lable for="subject">Subject</lable>
+        <textarea
+          id="subject"
+          placeholder="Write something about yourself"
+        ></textarea>
+        <button onclick="click()">Click</button>
+      </form>
+    </div>
+    <div id="one"></div>
+    <div id="two"></div>
+  </body>
+</html>

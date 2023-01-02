@@ -1,0 +1,77 @@
+@use '_supportspecialstyle.scss';
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+  .container {
+    background-color: supportspecialstyle.$basicColor;
+    border-radius: 5px 5px 0 0;
+    padding: 20px;
+    font-weight: 800;
+    max-width: 500pt;
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 15px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid supportspecialstyle.$borderColor;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: supportspecialstyle.$submitActiveColor;
+      color: white;
+      border: none;
+      font-size: larger;
+      border: 2px solid;
+      display: inline-block;
+      border-radius: 5px;
+      width: 200px;
+      text-align: center;
+      margin-left: 200pt;
+    }
+  }
+  @mixin changeColor(
+    $backy: supportspecialstyle.$backgroundColorError,
+    $colory: supportspecialstyle.$errorFontColor
+  ) {
+    background-color: $backy;
+    color: $colory;
+    font-size: 18px;
+    height: 50pt;
+    padding: 20px;
+    font-weight: 800;
+    max-width: 500pt;
+  }
+  #one {
+    @include changeColor(
+      $backy: supportspecialstyle.$backgroundColorValid,
+      $colory: supportspecialstyle.$validFontColor
+    );
+  }
+  #two {
+    @include changeColor(
+      $backy: supportspecialstyle.$backgroundColorError,
+      $colory: supportspecialstyle.$errorFontColor
+    );
+  }
+
+  .topnav {
+    padding: 20px;
+    margin: 20px;
+    font-weight: 800;
+    a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .loginContainer {
+      float: right;
+    }
+  }
+}
